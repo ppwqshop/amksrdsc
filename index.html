@@ -47,6 +47,11 @@
 				cursor: pointer;
 				border: 2px #000000 solid;
 			}
+			.ib{
+				font-size: 50px;
+				width: 50%;
+				height:850px;
+			}
 		</style>
 		<script>
 			function go_h1(){
@@ -55,6 +60,22 @@
 			
 			function go_h2(){
 				location.href='https://qaq.zag9.cn';
+			}
+			function change_img1(){
+				let i_v = document.getElementById("i1").value;
+				if(i_v != '1'){
+					let flag = Number(i_v) - 1;
+					document.getElementById("i1").value = flag;
+					document.getElementById("i2").src = "./image/" + flag +".jpg";
+				}
+			}
+			function change_img2(){
+				let i_v = document.getElementById("i1").value;
+				if(i_v != '9'){
+					let flag = Number(i_v) + 1;
+					document.getElementById("i1").value = flag;
+					document.getElementById("i2").src = "./image/" + flag +".jpg"
+				}
 			}
 		</script>
 	</head>
@@ -80,7 +101,20 @@
 		</div>
 		<div class="d2">
 			<b style="font-size: 50px;font-weight: bold;color: red;">👇下单教程👇</b><br>
-			
+			<div>
+				<table style="width: 100%; text-align: center;">
+					<td width="25%">
+						<input class="ib" type="button" value="👈" onclick="change_img1()"/>
+					</td>
+					<td width="50%">
+						<input id="i1" type="text" value="1" style="display: none;">
+						<img id="i2" src="./image/1.jpg" style="width: 100%;">
+					</td>
+					<td width="25%">
+						<input class="ib" type="button" value="👉" onclick="change_img2()"/>
+					</td>
+				</table>
+			</div>
 		</div>
 	</body>
 </html>
