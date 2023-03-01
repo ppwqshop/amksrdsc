@@ -1,148 +1,139 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>热度站导航</title>
-		<style>
-			.d{
-				text-align: center;
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				font-size: 50px;
-				font-weight: bold; 
-				line-height: 120px;
-				background-color: #ffffff;
-			}
-			.d1{
-				margin-top: 200px;
-				margin-left: 10%;
-				width: 80%;
-				font-size: 50px;
-				font-weight: bold; 
-				background-color: #ffffff;
-				border-radius: 40px;
-				border: 5px aqua solid;
-			}
-			.d2{
-				margin-top: 100px;
-				margin-left: 10%;
-				width: 80%;
-				font-size: 40px;
-				font-weight: bold; 
-				background-color: #ffffff;
-				border-radius: 40px;
-				border: 5px aqua solid;
-			}
-			.but{
-				background-color:#dddddd;
-				color: red;
-				font-weight: bold;
-				text-decoration: none;
-				font-size: 40px;
-				height: 100px;
-				width: 80%;
-				border-radius: 10px;
-				cursor: pointer;
-				border: 2px #000000 solid;
-			}
-			.ib{
-				font-size: 50px;
-				width: 50%;
-				height:850px;
-				background-color:#dddddd;
-				cursor: pointer;
-				border: 2px #000000 solid;
-			}
-		</style>
-		<script>
-			function go_h1(){
-				location.href='https://qaq.wcsfw.com';
-			}
-			
-			function go_h2(){
-				location.href='https://qaq.zag9.cn';
-			}
-			function change_img1(){
-				let i_v = document.getElementById("i0").value;
-				if(i_v != '1'){
-					let flag = Number(i_v) - 1;
-					document.getElementById("i0").value = flag;
-					if(flag == 1) {document.getElementById("i1").style.display = "";document.getElementById("i2").style.display = "none";}
-					else if(flag == 2) {document.getElementById("i2").style.display = "";document.getElementById("i3").style.display = "none";}
-					else if(flag == 3) {document.getElementById("i3").style.display = "";document.getElementById("i4").style.display = "none";}
-					else if(flag == 4) {document.getElementById("i4").style.display = "";document.getElementById("i5").style.display = "none";}
-					else if(flag == 5) {document.getElementById("i5").style.display = "";document.getElementById("i6").style.display = "none";}
-					else if(flag == 6) {document.getElementById("i6").style.display = "";document.getElementById("i7").style.display = "none";}
-					else if(flag == 7) {document.getElementById("i7").style.display = "";document.getElementById("i8").style.display = "none";}
-					else if(flag == 8) {document.getElementById("i8").style.display = "";document.getElementById("i9").style.display = "none";}
-					else if(flag == 9) {document.getElementById("i9").style.display = "";}
-				}
-			}
-			function change_img2(){
-				let i_v = document.getElementById("i0").value;
-				let flag = 0;
-				if(i_v != '9') flag = Number(i_v) + 1;
-				else flag = 1;
-				document.getElementById("i0").value = flag;
-				if(flag == 1) {document.getElementById("i1").style.display = "";document.getElementById("i9").style.display = "none";}
-				else if(flag == 2) {document.getElementById("i2").style.display = "";document.getElementById("i1").style.display = "none";}
-				else if(flag == 3) {document.getElementById("i3").style.display = "";document.getElementById("i2").style.display = "none";}
-				else if(flag == 4) {document.getElementById("i4").style.display = "";document.getElementById("i3").style.display = "none";}
-				else if(flag == 5) {document.getElementById("i5").style.display = "";document.getElementById("i4").style.display = "none";}
-				else if(flag == 6) {document.getElementById("i6").style.display = "";document.getElementById("i5").style.display = "none";}
-				else if(flag == 7) {document.getElementById("i7").style.display = "";document.getElementById("i6").style.display = "none";}
-				else if(flag == 8) {document.getElementById("i8").style.display = "";document.getElementById("i7").style.display = "none";}
-				else if(flag == 9) {document.getElementById("i9").style.display = "";document.getElementById("i8").style.display = "none";}	
-			}
-		</script>
-	</head>
-	<body style="text-align: center;background:#ecedf0 url(https://img1.baidu.com/it/u=165515718,1866781316&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889) fixed;background-size: 100%;">
-		<div class="d">
-			热度站导航页面
-		</div>
-		<div class="d1">
-			<div style="margin-top: 30px;">👇下单网址👇</div>
-			<div style="color: red; font-size: 30px; margin-left: 10%;width: 80%;">
-				注意：微信打开的 请点击右上角选择浏览器打开 否则会被拦截进不去哟！
-			</div>
-			<hr style="height: 5px;margin-top: 20px;background-color: black;">
-			<table style="width:100%;">
-				<td style="width: 50%;text-align: center;">
-					<input class="but" type="button" value="网址1&nbsp;点我进入" onclick="go_h1()"/>
-				</td>
-				<td style="width: 50%;text-align: center;">
-					<input class="but" type="button" value="网址2&nbsp;点我进入" onclick="go_h2()"/>
-				</td>
-			</table>
-			<br>
-		</div>
-		<div class="d2">
-			<div style="font-size: 50px;font-weight: bold;color: red;margin-top: 30px;">👇下单教程👇</div>
-			<div>
-				<table style="width: 100%; text-align: center;">
-					<td width="25%">
-						<input class="ib" type="button" value="👈" onclick="change_img1()"/>
-					</td>
-					<td width="50%">
-						<input id="i0" type="text" value="1" style="display: none;">
-						<img id="i1" style="width: 100%;" src="http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5rxXmze37l7sJ5xWpCmNwlaUQ8pW3wwIUA7e1uuHhHw2GKiBs.BCOWIzzDfVzeO.pjJr3uor46c76GzgzstAmNU!/b&bo=OARgCTgEYAkBByA!&rf=viewer_4">
-						<img id="i2" style="display: none;width: 100%;" src="http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5rxXmze37l7sJ5xWpCmNwlam6AVZyozzrIi*5DrCuyfNC1bVANUpyIJlR.4xRjV6ulAJkRIJmGchz0QIstxIpDQ!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
-						<img id="i3" style="display: none;width: 100%;" src="http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5l3UWJmEd2B9z2.yKT2aWHiQ6H3OscaGqzxJwZTAwPlea2SViecNxZ4cBg8ORiWY5djm*waINpKOhfR2w16Qqes!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
-						<img id="i4" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5l3UWJmEd2B9z2.yKT2aWHjt7hSFf.wa*5VuKUjsyYiDsoaEpiQ5FFozwlowDykUPjpv.xxFK4J1qD53ad0*jmw!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
-						<img id="i5" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5l3UWJmEd2B9z2.yKT2aWHgw4BvKfBU9Ydn2VEJhRbL.pKpO05PLnskcc8s*lPgegJrEb.o*xKpbhTcK2*BQB88!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
-						<img id="i6" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5l3UWJmEd2B9z2.yKT2aWHhpAgtmW3em2MszNF9fZ0oGde7DwZYwBRpequNOSicTqC21n09U8df2xY60Drkcn1k!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
-						<img id="i7" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5rIekPtedUL2i1Ph4enUA2KqOLW1dpZvPh0Q1NobMZTIDPQmbTteJqsQx3f2nxdDBRifQIqmG43SnYF6*TQScOU!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
-						<img id="i8" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5rIekPtedUL2i1Ph4enUA2KGfi6ljHz8dSU*esnc5FRI7*6xY2LQ14OqDxdDjlppRaAIK73.*aFhY*qaTX.qlZE!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
-						<img id="i9" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5rIekPtedUL2i1Ph4enUA2LLliIVLJt3lCxeXRNJljWYWNZMB6PsVqkKZjfk3.9WVmMMQ2n2MKOWn7KAeVFjvuA!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
-					</td>
-					<td width="25%">
-						<input class="ib" type="button" value="👉" onclick="change_img2()"/>
-					</td>
-				</table>
-				<br>
-			</div>
-		</div>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" 
+	content="
+		width=device-width,
+		minimum-scale=1.0,
+		maximum-scale=1.0">
+        <title>热度站导航</title>
+        <style>
+            .d1{
+                margin-top: 20px;
+                margin-left: 10%;
+                width: 80%;
+                font-size: 25px;
+                font-weight: bold; 
+                background-color: #ffffff;
+                border-radius: 20px;
+                border: 5px aqua solid;
+            }
+            .d2{
+                margin-top: 20px;
+                margin-left: 10%;
+                width: 80%;
+                font-size: 40px;
+                font-weight: bold; 
+                background-color: #ffffff;
+                border-radius: 40px;
+                border: 5px aqua solid;
+            }
+            .but{
+                background-color:#dddddd;
+                color: red;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 15px;
+                height: 40px;
+                width: 80%;
+                border-radius: 5px;
+                cursor: pointer;
+                border: 2px #000000 solid;
+            }
+            .ib{
+                font-size: 20px;
+                width: 50%;
+                height:350px;
+                background-color:#dddddd;
+                cursor: pointer;
+                border: 2px #000000 solid;
+            }
+        </style>
+        <script>
+            function go_h1(){
+                location.href='https://qaq.wcsfw.com';
+            }
+            
+            function go_h2(){
+                location.href='https://qaq.zag9.cn';
+            }
+            function change_img1(){
+                let i_v = document.getElementById("i0").value;
+                if(i_v != '1'){
+                    let flag = Number(i_v) - 1;
+                    document.getElementById("i0").value = flag;
+                    if(flag == 1) {document.getElementById("i1").style.display = "";document.getElementById("i2").style.display = "none";}
+                    else if(flag == 2) {document.getElementById("i2").style.display = "";document.getElementById("i3").style.display = "none";}
+                    else if(flag == 3) {document.getElementById("i3").style.display = "";document.getElementById("i4").style.display = "none";}
+                    else if(flag == 4) {document.getElementById("i4").style.display = "";document.getElementById("i5").style.display = "none";}
+                    else if(flag == 5) {document.getElementById("i5").style.display = "";document.getElementById("i6").style.display = "none";}
+                    else if(flag == 6) {document.getElementById("i6").style.display = "";document.getElementById("i7").style.display = "none";}
+                    else if(flag == 7) {document.getElementById("i7").style.display = "";document.getElementById("i8").style.display = "none";}
+                    else if(flag == 8) {document.getElementById("i8").style.display = "";document.getElementById("i9").style.display = "none";}
+                    else if(flag == 9) {document.getElementById("i9").style.display = "";}
+                }
+            }
+            function change_img2(){
+                let i_v = document.getElementById("i0").value;
+                let flag = 0;
+                if(i_v != '9') flag = Number(i_v) + 1;
+                else flag = 1;
+                document.getElementById("i0").value = flag;
+                if(flag == 1) {document.getElementById("i1").style.display = "";document.getElementById("i9").style.display = "none";}
+                else if(flag == 2) {document.getElementById("i2").style.display = "";document.getElementById("i1").style.display = "none";}
+                else if(flag == 3) {document.getElementById("i3").style.display = "";document.getElementById("i2").style.display = "none";}
+                else if(flag == 4) {document.getElementById("i4").style.display = "";document.getElementById("i3").style.display = "none";}
+                else if(flag == 5) {document.getElementById("i5").style.display = "";document.getElementById("i4").style.display = "none";}
+                else if(flag == 6) {document.getElementById("i6").style.display = "";document.getElementById("i5").style.display = "none";}
+                else if(flag == 7) {document.getElementById("i7").style.display = "";document.getElementById("i6").style.display = "none";}
+                else if(flag == 8) {document.getElementById("i8").style.display = "";document.getElementById("i7").style.display = "none";}
+                else if(flag == 9) {document.getElementById("i9").style.display = "";document.getElementById("i8").style.display = "none";}    
+            }
+        </script>
+    </head>
+    <body style="width:100%;text-align: center;background:#ecedf0 url(https://img1.baidu.com/it/u=165515718,1866781316&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889) fixed;background-size: 100%;">
+        <div class="d1">
+            <div style="margin-top: 10px;">👇下单网址👇</div>
+            <div style="color: red; font-size: 15px; margin-left: 10%;width: 80%;">
+                注意：微信打开的 请点击右上角选择浏览器打开 否则会被拦截进不去哟！
+            </div>
+            <hr style="height: 5px;margin-top: 20px;background-color: black;">
+            <table style="width:100%;">
+                <td style="width: 50%;text-align: center;">
+                    <input class="but" type="button" value="网址1&nbsp;点我进入" onclick="go_h1()"/>
+                </td>
+                <td style="width: 50%;text-align: center;">
+                    <input class="but" type="button" value="网址2&nbsp;点我进入" onclick="go_h2()"/>
+                </td>
+            </table>
+            <br>
+        </div>
+        <div class="d2">
+            <div style="font-size: 25px;font-weight: bold;color: red;margin-top: 10px;">👇下单教程👇</div>
+            <div>
+                <table style="width: 100%; text-align: center;">
+                    <td width="25%">
+                        <input class="ib" type="button" value="👈" onclick="change_img1()"/>
+                    </td>
+                    <td width="50%">
+                        <input id="i0" type="text" value="1" style="display: none;">
+                        <img id="i1" style="width: 100%;" src="http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5rxXmze37l7sJ5xWpCmNwlaUQ8pW3wwIUA7e1uuHhHw2GKiBs.BCOWIzzDfVzeO.pjJr3uor46c76GzgzstAmNU!/b&bo=OARgCTgEYAkBByA!&rf=viewer_4">
+                        <img id="i2" style="display: none;width: 100%;" src="http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5rxXmze37l7sJ5xWpCmNwlam6AVZyozzrIi*5DrCuyfNC1bVANUpyIJlR.4xRjV6ulAJkRIJmGchz0QIstxIpDQ!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
+                        <img id="i3" style="display: none;width: 100%;" src="http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5l3UWJmEd2B9z2.yKT2aWHiQ6H3OscaGqzxJwZTAwPlea2SViecNxZ4cBg8ORiWY5djm*waINpKOhfR2w16Qqes!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
+                        <img id="i4" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5l3UWJmEd2B9z2.yKT2aWHjt7hSFf.wa*5VuKUjsyYiDsoaEpiQ5FFozwlowDykUPjpv.xxFK4J1qD53ad0*jmw!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
+                        <img id="i5" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5l3UWJmEd2B9z2.yKT2aWHgw4BvKfBU9Ydn2VEJhRbL.pKpO05PLnskcc8s*lPgegJrEb.o*xKpbhTcK2*BQB88!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
+                        <img id="i6" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5l3UWJmEd2B9z2.yKT2aWHhpAgtmW3em2MszNF9fZ0oGde7DwZYwBRpequNOSicTqC21n09U8df2xY60Drkcn1k!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
+                        <img id="i7" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5rIekPtedUL2i1Ph4enUA2KqOLW1dpZvPh0Q1NobMZTIDPQmbTteJqsQx3f2nxdDBRifQIqmG43SnYF6*TQScOU!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
+                        <img id="i8" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5rIekPtedUL2i1Ph4enUA2KGfi6ljHz8dSU*esnc5FRI7*6xY2LQ14OqDxdDjlppRaAIK73.*aFhY*qaTX.qlZE!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
+                        <img id="i9" style="display: none;width: 100%;" src = "http://m.qpic.cn/psc?/V53AkDAc1kYG7I2iVRGh2cYqXI3eglOE/ruAMsa53pVQWN7FLK88i5rIekPtedUL2i1Ph4enUA2LLliIVLJt3lCxeXRNJljWYWNZMB6PsVqkKZjfk3.9WVmMMQ2n2MKOWn7KAeVFjvuA!/b&bo=OARgCTgEYAkBFzA!&rf=viewer_4">
+                    </td>
+                    <td width="25%">
+                        <input class="ib" type="button" value="👉" onclick="change_img2()"/>
+                    </td>
+                </table>
+                <br>
+            </div>
+        </div>
+    </body>
 </html>
