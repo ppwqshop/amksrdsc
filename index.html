@@ -2,34 +2,85 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>平平无奇热度站导航</title>
+		<title>热度站导航</title>
 		<style>
+			.d{
+				text-align: center;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				font-size: 50px;
+				font-weight: bold; 
+				line-height: 120px;
+				background-color: #ffffff;
+			}
+			.d1{
+				margin-top: 200px;
+				margin-left: 10%;
+				width: 80%;
+				font-size: 40px;
+				font-weight: bold; 
+				background-color: #ffffff;
+				border-radius: 40px;
+				border: 5px aqua solid;
+			}
+			.d2{
+				margin-top: 100px;
+				margin-left: 10%;
+				width: 80%;
+				font-size: 40px;
+				font-weight: bold; 
+				background-color: #ffffff;
+				border-radius: 40px;
+				border: 5px aqua solid;
+			}
 			.but{
-				background-color:black;
-				color: #dddddd;
+				background-color:#dddddd;
+				color: red;
 				font-weight: bold;
 				text-decoration: none;
 				font-size: 40px;
-				padding: 20px 50px;
-				border-radius: 50px;
+				height: 100px;
+				width: 80%;
+				border-radius: 10px;
+				cursor: pointer;
+				border: 2px #000000 solid;
 			}
 		</style>
+		<script>
+			function go_h1(){
+				location.href='https://qaq.wcsfw.com';
+			}
+			
+			function go_h2(){
+				location.href='https://qaq.zag9.cn';
+			}
+		</script>
 	</head>
-	<body style="text-align: center;">
-		<br><br><br><br><br>
-		<div style="font-size: 50px;font-weight: bold;">
-			👇点击进入平平无奇热度站👇
+	<body style="text-align: center;   background:#ecedf0 url(./bg.jpg) fixed;">
+		<div class="d">
+			热度站导航页面
 		</div>
-		<div style="margin-top: 50px;">
-			<table style="width:80%;margin-left: 10%;">
-				<td style="width: 40%;text-align: center;"><a class="but" href="https://qaq.wcsfw.com">热度站入口1</a></td>
-				<td style="width: 40%;text-align: center;"><a class="but" href="https://qaq.zag9.cn">热度站入口2</a></td>
+		<div class="d1">
+			<div><br>👇下单网址👇</div>
+			<div style="color: red; font-size: 30px; margin-left: 10%;width: 80%;">
+				注意：微信打开的 请点击右上角选择浏览器打开 否则会被拦截进不去哟！
+			</div>
+			<hr style="height: 5px;margin-top: 20px;background-color: black;">
+			<table style="width:100%;">
+				<td style="width: 50%;text-align: center;">
+					<input class="but" type="button" value="网址1&nbsp;点我进入" onclick="go_h1()"/>
+				</td>
+				<td style="width: 50%;text-align: center;">
+					<input class="but" type="button" value="网址2&nbsp;点我进入" onclick="go_h2()"/>
+				</td>
 			</table>
+			<br>
 		</div>
-		<hr style="height: 5px;margin-top: 60px;background-color: black;">
-		<div style="margin-top: 30px;">
-			<b style="font-size: 50px;font-weight: bold;color: red;">👇下单教程视频👇</b><br>
-			<video src="./ppwq.mp4" width="50%" controls></video>
+		<div class="d2">
+			<b style="font-size: 50px;font-weight: bold;color: red;">👇下单教程👇</b><br>
+			
 		</div>
 	</body>
 </html>
